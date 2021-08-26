@@ -1,0 +1,145 @@
+/***LIMPANDO FORMATAÇÃO***/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* se ajusta com padding (altura e largura de acordo com a box) */
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    /* display: contents; */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    background-image: url("../img/intranet.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    height: 110px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+#menu {
+    margin-bottom: 10px;
+}
+.botao-menu {
+    padding: 5px;
+    background: rgb(255, 135, 36);
+    text-decoration: none;
+    color: black;
+    border-radius: 5%;
+}
+.botao-menu:hover{
+    transition: .8s;
+    color: blue;
+    background: rgb(248, 174, 113);
+}
+
+.botao-menu:active{
+    color: red;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content-box {
+    border: 1px solid black;
+    max-width: 400px;
+    width: 100%;
+    margin: 5px;
+    padding: 2px;
+    text-align: center;
+}
+
+#content-geral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content-central {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#content-rodape .content-box{
+    max-width: 810px;
+    width: 100%;
+}
+
+#area-direita {
+    margin-right: 5px;
+}
+#area-direita .content-box{
+    margin: 0; /**Resetando**/
+    padding: 0; /**Resetando**/
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+#area-direita .content-box a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: orange;
+}
+
+/*
+.msg-icon {
+    background-image: url("../img/message-icon.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    margin-left: 2px;
+}
+*/
+.msg-icon {
+    padding-left: 1px;
+}
+
+.botao {
+    background: rgb(255, 135, 36);
+    text-decoration: none;
+    color: black;
+    border-radius: 5%;
+    font-size: small;
+    padding: 2px;
+}
+
+/***----------FOOTER-------***/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 135, 36);
+}
+#menu-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#menu-footer a{
+    width: 10%;
+    text-decoration: none;
+    color: black;
+}
+#menu-footer a:hover{
+    background-color: rgb(248, 174, 113);
+    border-radius: 5%;
+}
