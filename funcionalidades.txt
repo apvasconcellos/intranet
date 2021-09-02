@@ -1,0 +1,8 @@
+* Colocar Avisos da Empresa
+* Chat com os colaboradores
+* Feed Social (fotos de eventos na empresa)
+* Login
+* Calendario Pessoal do Funcionario
+* Calendario de eventos
+* Pagina de ADM (pode postar avisos, eventos, modificar a database, postar no feed da empresa)
+* Perfil do usuario
