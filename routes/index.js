@@ -37,5 +37,9 @@ router.get('/perfil', function(req, res, next) {
   res.render('perfil', { title: 'Meu Perfil' });
 });
 
+router.get('/adm', function(req, res, next) {
+  res.render('adm', { title: 'Administrar' });
+});
+
 
 module.exports = router;

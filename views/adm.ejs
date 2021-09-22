@@ -1,0 +1,44 @@
+<%- include("./partials/header") %>
+
+<main>
+  <section id="content-geral">
+
+    <h2>Area do ADM</h2>
+      <section id="content-central">
+          <div class="content-box">
+              <h2>Avisos</h2>
+              <form>
+                  Titulo: <input type="text" name="titulo"></br>
+                  Descrição: <input type="text" name="descricao"> </br>
+                  Imagem: <input type="file" name="imagem"> </br>
+                  <input type="submit" value="Postar">
+              </form>
+          </div>
+      </section>
+
+      <section id="content-rodape">
+        <div class="content-box">
+            <h2>Produtos</h2>
+            <form>
+                Titulo: <input type="text" name="titulo"></br>
+                Descrição: <input type="text" name="descricao"> </br>
+                Imagem: <input type="file" name="imagem"> </br>
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+      </section>
+
+      <section id="content-rodape">
+        <div class="content-box">
+            <h2>Remover</h2>
+            <form>
+                Procurar: <input type="search" name="procurar"></br>
+                <input type="submit" value="Buscar">
+            </form>
+        </div>
+      </section>
+ 
+  </section>
+</main>
+    
+<%- include("./partials/footer") %>
