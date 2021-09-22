@@ -9,7 +9,7 @@
               <h2>Avisos</h2>
               <form>
                   Titulo: <input type="text" name="titulo"></br>
-                  Descrição: <input type="text" name="descricao"> </br>
+                  Descrição: </br><textarea name="descricao" rows="5" cols="30"></textarea> </br>
                   Imagem: <input type="file" name="imagem"> </br>
                   <input type="submit" value="Postar">
               </form>
@@ -21,7 +21,21 @@
             <h2>Produtos</h2>
             <form>
                 Titulo: <input type="text" name="titulo"></br>
-                Descrição: <input type="text" name="descricao"> </br>
+                Descrição: </br><textarea name="descricao" rows="5" cols="30"></textarea> </br>
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria">
+                    <option selected disabled value="">Escolha...</option>
+                    <option value="tipo-1">Tipo 1</option>
+                    <option value="tipo-2">Tipo 2</option>
+                    <option value="tipo-3">Tipo 3</option>
+                </select> </br>
+                <label for="fornecedor">Fornecedor:</label>
+                <select id="fornecedor" name="fornecedor">
+                    <option selected disabled value="">Escolha...</option>
+                    <option value="fornecedor-1">Fornecedor 1</option>
+                    <option value="fornecedor-2">Fornecedor 2</option>
+                    <option value="fornecedor-3">Fornecedor 3</option>
+                </select> </br>
                 Imagem: <input type="file" name="imagem"> </br>
                 <input type="submit" value="Cadastrar">
             </form>
@@ -32,8 +46,8 @@
         <div class="content-box">
             <h2>Remover</h2>
             <form>
-                Procurar: <input type="search" name="procurar"></br>
-                <input type="submit" value="Buscar">
+                <input type="text" name="procurar" placeholder="Produto, Avisos...">
+                <input type="submit" name="buscar" value="Buscar">
             </form>
         </div>
       </section>
