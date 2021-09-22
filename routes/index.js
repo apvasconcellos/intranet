@@ -29,5 +29,13 @@ router.get('/catalogo', function(req, res, next) {
   res.render('catalogo', { title: 'Catálogo' });
 });
 
+router.get('/cadastrar', function(req, res, next) {
+  res.render('cadastrar', { title: 'Cadastrar' });
+});
+
+router.get('/perfil', function(req, res, next) {
+  res.render('perfil', { title: 'Meu Perfil' });
+});
+
 
 module.exports = router;
